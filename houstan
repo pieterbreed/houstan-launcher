@@ -1,0 +1,7 @@
+#!/usr/bin/env boot
+
+(set-env! :dependencies '[[pieterbreed/houstan "0.9.0"]])
+(require 'houstan.core)
+
+(defn -main [& args]
+  (apply houstan.core/-main args))
